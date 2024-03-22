@@ -1,0 +1,7 @@
+name: JoinTeleport
+version: '1.1.1-SNAPSHOT'
+main: bugle.cloven.jointeleport.JoinTeleport
+api-version: '1.20'
+author: Chiloven_945
+description: "使玩家在加入游戏时传送至指定坐标并向该玩家发送消息。"
+prefix: JoinTeleport
