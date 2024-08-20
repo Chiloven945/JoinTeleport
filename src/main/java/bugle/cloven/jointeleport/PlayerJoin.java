@@ -30,10 +30,8 @@ public class PlayerJoin implements Listener {
         if (stopCount > 0 && joinCount <= stopCount) { //判断功能情况。
             player.sendMessage(ChatColor.GOLD + Objects.requireNonNull(config.getString("joinMessage")));
             player.getScoreboard().getObjective("leave_game").getScore(player.getName()).setScore(joinCount + 1);
-        } else {
-            if (stopCount == 0) {
-                player.sendMessage(ChatColor.GOLD + Objects.requireNonNull(config.getString("joinMessage")));
-            }
+        } else if (stopCount == 0) {
+            player.sendMessage(ChatColor.GOLD + Objects.requireNonNull(config.getString("joinMessage")));
         }
 
     }
